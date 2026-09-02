@@ -1,0 +1,28 @@
+{
+  "name": "jest-tdd-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kagnos/Jest-TDD-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kagnos/Jest-TDD-Practice/issues"
+  },
+  "homepage": "https://github.com/Kagnos/Jest-TDD-Practice#readme",
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "babel-jest": "^30.5.1",
+    "jest": "^30.5.1"
+  }
+}
