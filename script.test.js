@@ -1,5 +1,3 @@
-import { sum } from "./script";
-
-test("sum function adds 1 + 2 to equal 3", () => {
-    expect(sum(1, 2)).toBe(3);
+test("capitalize function takes hello and returns Hello", () => {
+    expect(capitalize("hello")).toBe("Hello");
 });
