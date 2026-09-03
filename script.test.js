@@ -14,3 +14,7 @@ test("all calculator functions operate as intended", () => {
     expect(calculator("multiply", "4", "2")).toBe(8);
     expect(calculator("divide", "4", "2")).toBe(2);
 })
+
+test("caesarCipher function takes Hello, World! shifts it 3 letters and returns Khoor, Zruog!", () => {
+    expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+})
