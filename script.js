@@ -1,4 +1,4 @@
-export { capitalize, reverseString, calculator, caesarCipher };
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
 
 function capitalize (str) {
     const splitStr = str.split("");
@@ -49,4 +49,19 @@ function caesarCipher (str, shift) {
         const shiftedCharCode = (charCode + normalizedShift);
         return String.fromCharCode(shiftedCharCode); // Translate Ascii code back into letter
     }
+}
+
+function analyzeArray (arr) {
+    const arrLength = arr.length;
+    const arrAverage = arr.reduce((sum, cur) => {return sum + cur}, 0) / arrLength;
+    const arrSorted = arr.sort();
+    const arrMin = arrSorted.at(0);
+    const arrMax = arrSorted.at(arrLength - 1);
+
+    return {
+        average: arrAverage,
+        min: arrMin,
+        max: arrMax,
+        length: arrLength
+    };
 }
