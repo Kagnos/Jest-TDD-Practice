@@ -20,5 +20,5 @@ test("caesarCipher function takes Hello, World! shifts it 3 letters and returns 
 })
 
 test("analyzeArray function takes array of numbers and returns object with average, min, max, and length properties", () => {
-    expect(analyzeArray([1,8,3,4,2,6])).toBe({average: 4,min: 1,max: 8,length: 6});
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual({average: 4,min: 1,max: 8,length: 6});
 })

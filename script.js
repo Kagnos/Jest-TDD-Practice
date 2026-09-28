@@ -28,12 +28,12 @@ function calculator (oper, num1, num2) {
     }
 }
 
-function caesarCipher(str, shift) {
+function caesarCipher (str, shift) {
     const splitStr = str.split("");
     const shiftedStr = splitStr.map((char) => shiftCharacter(char, shift));
     return shiftedStr.join("");
 
-    function shiftCharacter(char, shift) {
+    function shiftCharacter (char, shift) {
         const charCode = char.charCodeAt(); // Translate character into Ascii code
         let baseCode;
 
