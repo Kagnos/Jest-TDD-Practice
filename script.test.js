@@ -18,3 +18,7 @@ test("all calculator functions operate as intended", () => {
 test("caesarCipher function takes Hello, World! shifts it 3 letters and returns Khoor, Zruog!", () => {
     expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 })
+
+test("analyzeArray function takes array of numbers and returns object with average, min, max, and length properties", () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toBe({average: 4,min: 1,max: 8,length: 6});
+})
